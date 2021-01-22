@@ -1,6 +1,9 @@
 Software developed and provided by Alessandro De Piccoli
+
 RESEARCH AND DEVELOPMENT AGREEMENT: University of Milan and Technology Innovation Institute
+
 Research project: "Algebraic analysis of HMAC-SHA-1"
+
 Main supervisors/point of contacts: Andrea Visconti (University of Milan), Emanuele Bellini (Technology Innovation Institute)
 
 # Shanatomy
