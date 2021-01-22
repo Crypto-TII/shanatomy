@@ -4,26 +4,23 @@
 
 Software requested to completely enjoy *Shanatomy*:
 
-0. [Python3](https://www.python.org/) (in `/usr/lib/python3` by default, if it
-   has a different path, change accordingly `Makefile`);
-1. [Sympy](https://www.sympy.org/en/index.html), a Python module to manipulate
-   algebra;
+0. [Python3](https://www.python.org/) (in `/usr/lib/python3` by default, if it has a different path, change accordingly `Makefile`);
+1. [Sympy](https://www.sympy.org/en/index.html), a Python module to perform algebraic manipulations;
 2. [CryptoMiniSat](https://github.com/msoos/cryptominisat), a SAT solver with
    xor extension or any other SAT solver able to output model in DIMACS
 standard;
 
-Before deepening the code, it is suggested to read this guide without skipping
-parts.
+Before venturing into the code, it is suggested to read this guide without skipping parts.
 
 ## A bit of documentation (optional)
 
 In order to make clear how the software is designed, there are docstrings for
-some functions in principal module, the bitpy. You can build the documentation
+some functions in the main module, `bitpy.py`. You can build the documentation
 by simply run the following command.
 
 > `pydoc3 -w bitpy`
 
-This will generate a file called `bitpy.html` in which you can understand the
+This will generate a file called `bitpy.html` from which you can understand the
 background philosophy of *Shanatomy*.
 
 ## Building the system
@@ -33,7 +30,7 @@ Once being in the Shanatomy directory, type
 > `make`
 
 to have the correct tree and, additionally, a basic test to prove that the
-system generated is a correct SHA-1. If it's all ok, type
+system generated is a correct SHA-1. If all is ok, type
 
 > `make finalize`
 
@@ -41,10 +38,7 @@ to have the complete setup to mount a preimage attack.
 
 ## Mount a preimage attack to SHA-1
 
-*Remark*: consider that implemented attack uses a digest coming from strings,
-so, it is a second preimage attack. But, if we are given only a SHA-1 digest
-without knowing the input, second preimage attack is equivalent to a first
-preimage attack from an implementing point of view.
+*Remark*: consider that the implemented attack uses a digest coming from strings, so, it is a second preimage attack. But, if we are given only a SHA-1 digest without knowing the input, second preimage attack is equivalent to a first preimage attack from an implementation point of view.
 
 Go in *Shanatomy* directory.
 
